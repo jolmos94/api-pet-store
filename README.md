@@ -163,6 +163,8 @@ You can also run each script directly in the corresponding folder (Recommended m
 ```
 locust -f .\user_locustfile.py -u 100 -r 10
 ```
+- -u : Number of virtual users.
+- -r : Ramp up.
 
 ### Output
 The console will print as shown below:

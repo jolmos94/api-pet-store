@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Test Report - Locust</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1, h2, h3 { color: #2c3e50; }
+        p { line-height: 1.6; }
+        ul { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>📊 Load Test Report - Locust</h1>
+    
+    <h2>🔹 Summary</h2>
+    <p>A load test was conducted using <strong>Locust</strong> on the <strong>Petstore - OpenAPI 3.0</strong> API to evaluate its performance under high concurrency conditions. During the test, it was observed that after approximately <strong>2 minutes</strong>, with <strong>more than 50 simultaneous users</strong>, the API started returning <strong>500 Internal Server Error</strong>, indicating server issues under load.</p>
+    
+    <h2>🚀 Test Details</h2>
+    <ul>
+        <li><strong>Tool Used:</strong> Locust</li>
+        <li><strong>Total Simulated Users:</strong> 50+ and 100</li>
+        <li><strong>User Spawn Rate:</strong> 10 users per second</li>
+        <li><strong>Test Duration:</strong> ~2 minutes until errors occurred</li>
+        <li><strong>Evaluated Endpoints:</strong>
+            <ul>
+                <li>User</li>
+                <li>Store</li>
+                <li>Pet</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h2>🔍 Analysis of Results</h2>
+    <h3>🔸 Possible Causes of the 500 Error</h3>
+    <ul>
+        <li><strong>Server Overload:</strong> Increased users may have exceeded processing capacity.</li>
+        <li><strong>Simultaneous Connection Limits:</strong> Infrastructure restrictions may have blocked new requests.</li>
+        <li><strong>Database Failures:</strong> Possible bottleneck in read/write operations.</li>
+    </ul>
+    
+    <h2>✅ Recommendations</h2>
+    <ul>
+        <li>✔️ <strong>Monitor the Server:</strong> Review logs and CPU, RAM, and network traffic metrics to identify bottlenecks.</li>
+        <li>✔️ <strong>Optimize the API:</strong> Improve concurrency handling and database query efficiency.</li>
+        <li>✔️ <strong>Detailed Errors:</strong> Configure more informative logs in the backend to diagnose the exact cause of the 500 errors.</li>
+    </ul>
+    
+    <h2>📌 Conclusion</h2>
+    <p>The test results revealed that the <strong>Petstore - OpenAPI 3.0</strong> API does not effectively handle loads greater than <strong>50 concurrent users</strong>. It is recommended to analyze and optimize the API to ensure better performance under high concurrency.</p>
+
+    <hr>
+    <p><strong>📅 Test Date:</strong> 24/02/2025</p>
+    <p><strong>👤 Responsible:</strong> jolmos94</p>
+</body>
+</html>
