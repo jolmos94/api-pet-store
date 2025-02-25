@@ -145,14 +145,35 @@ This will prompt the user to enter the key of the module to be tested:
 *Example*:
 
 ```
-Database: user
+Enter Locust script key to run (user, store, pet): user
 ```
 
 The modules available for testing are:
 
 ```
-test
+user
+store
+pet
+```
+
+You can also run each script directly in the corresponding folder (Recommended method):
+
+*Example*:
+
+```
+locust -f .\user_locustfile.py -u 100 -r 10
 ```
 
 ### Output
-The console will print the result of the executed tests, as shown below:
+The console will print as shown below:
+
+```
+[2025-02-24 23:23:55,666] ${HOSTNAME{/INFO/locust.main: Starting Locust 2.33.0
+[2025-02-24 23:23:55,667] ${HOSTNAME}/INFO/locust.main: Starting web interface at http://localhost:8089, press enter to open your default browser.
+```
+
+Then proceed to open the default Locust web portal:  http://localhost:8089
+
+Configure in the web interface the number of users, the ramp up and the host to be evaluated respectively.
+
+![Descripción de la imagen](performance/locust.jpg)
