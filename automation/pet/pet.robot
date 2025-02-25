@@ -97,9 +97,7 @@ Create_pet_json
     ...    photoUrls=${photo_urls_list}
     ...    tags=${tags_list}
     ...    status=${status}
-    # Dict2JSON
-    #${pet_json}    Evaluate    __import__('json').dumps(${pet_dict})    modules=json
-    #RETURN    ${pet_json}
+
     RETURN    ${pet_dict}
 
 #JSON update function
