@@ -26,7 +26,7 @@ pip install robotframework-jsonvalidator
 ```
 # Locust with Library for HTTP requests
 
-pip install locust requests
+pip install locust requests faker
 ```
 
 
